@@ -2,7 +2,8 @@ import React from 'react';
 import Student from './Student';
 import './App.css';
 import UseStudenState from './UseStudenState';
-
+import "./UseStudentState.css";
+import ImageManipulation from './ImageManipulation';
 function App() {
   // const h1 = <h1>hello</h1>;
   // const color = {
@@ -45,12 +46,16 @@ function App() {
     //     }
     //   </div>
     // </div>
-    <div>
-      <h2>Hello</h2>
-      <div>
+    <>
+      
+      {/* <h2>Hello</h2>
+      <div className=''>
         <UseStudenState/>
-      </div>
-    </div>
+      </div> */}
+      <ImageManipulation/>
+      
+      
+    </>
   );
 }
 
