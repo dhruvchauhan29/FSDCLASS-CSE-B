@@ -5,7 +5,7 @@ function ImageManipulation() {
   const [hight, setHight] = useState(100);
   const [width, setWidth] = useState(50);
   const [angle, setAngle] = useState(0);
-  const [containerBgColor, setContainerBgColor] = useState('red'); // State for image container color
+  const [containerBgColor, setContainerBgColor] = useState('red');
 
   const enhanceHeight = () => {
     setHight(hight + 30);
@@ -20,7 +20,11 @@ function ImageManipulation() {
   };
 
   const toggleContainerBgColor = () => {
-    setContainerBgColor(containerBgColor === 'red' ? 'blue' : 'red');
+    
+    const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
+      Math.random() * 256
+    )}, ${Math.floor(Math.random() * 256)})`;
+    setContainerBgColor(randomColor);
   };
 
   return (
@@ -30,14 +34,14 @@ function ImageManipulation() {
         height: '600px',
         width: '400px',
         marginLeft: '600px',
-        backgroundColor: '#d5eb34', // Main container background
+        backgroundColor: '#d5eb34', 
       }}
     >
       <div
         style={{
           marginLeft: '40px',
           marginTop: '40px',
-          backgroundColor: containerBgColor, // Image container color
+          backgroundColor: containerBgColor, 
           height: '200px',
           width: '200px',
           border: '1px solid black',
@@ -62,7 +66,7 @@ function ImageManipulation() {
           Enhance Width
         </button>
         <button id="btn" onClick={toggleContainerBgColor}>
-          Toggle Image Container Color
+          Change Container Color
         </button>
       </div>
     </div>
