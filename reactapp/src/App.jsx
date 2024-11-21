@@ -4,6 +4,8 @@ import './App.css';
 import UseStudenState from './UseStudenState';
 import "./UseStudentState.css";
 import ImageManipulation from './ImageManipulation';
+import MyUseEffect from './MyUseEffect';
+import UseFatchAPI from './UseFatchAPI';
 function App() {
   // const h1 = <h1>hello</h1>;
   // const color = {
@@ -52,7 +54,8 @@ function App() {
       <div className=''>
         <UseStudenState/>
       </div> */}
-      <ImageManipulation/>
+      {/* <MyUseEffect/> */}
+      <UseFatchAPI/>
       
       
     </>

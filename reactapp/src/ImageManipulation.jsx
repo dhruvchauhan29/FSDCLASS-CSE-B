@@ -54,6 +54,8 @@ function ImageManipulation() {
           style={{ transform: `rotate(${angle}deg)` }}
           alt="Manipulated"
         />
+
+        
       </div>
       <div style={{ marginTop: '40px' }}>
         <button id="btn" onClick={enrotate}>
